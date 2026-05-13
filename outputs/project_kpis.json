@@ -1,0 +1,7 @@
+{
+  "products_analyzed": 60,
+  "high_risk_products": 4,
+  "forecast_28_day_units": 34697.2,
+  "estimated_reorder_value": 20734.19,
+  "dataset": "M5 Forecasting Accuracy / Walmart-style retail demand data"
+}
