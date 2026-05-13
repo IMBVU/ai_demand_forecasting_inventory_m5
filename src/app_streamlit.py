@@ -1,12 +1,16 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 st.set_page_config(page_title="AI Demand Forecasting", layout="wide")
 
 st.title("AI-Powered Demand Forecasting & Inventory Optimization")
 st.caption("Built with M5 Forecasting Accuracy retail demand data")
 
-df = pd.read_csv("../outputs/m5_inventory_forecast_recommendations.csv")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR.parent / "outputs" / "m5_inventory_forecast_recommendations.csv"
+
+df = pd.read_csv(DATA_PATH)
 
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Products Analyzed", len(df))
