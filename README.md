@@ -45,6 +45,3 @@ python forecast_inventory.py
 python ai_recommendation_generator.py
 streamlit run app_streamlit.py
 ```
-
-## Recruiter Notes
-This project is ideal for business analytics, supply chain analytics, operations analytics, and data analyst internship roles.
